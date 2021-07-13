@@ -61,12 +61,12 @@ console.log(s);
 /* 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
     результат поместите в переменную v.*/
 // V = П * r2 * h
- /*
- let heightC = 10;
- let dc = 4;
- let v =( Math.PI * dc * heightC );
- console.log(v);
- */
+/*
+let heightC = 10;
+let dc = 4;
+let v =( Math.PI * dc * heightC );
+console.log(v);
+*/
 
 /* 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
 Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
@@ -174,14 +174,16 @@ if (c > a && c > b && a > c)  document.write(`${a} ${b} ${c}`);
 
 
 let color = prompt('color:');
-if color === ('red'){
+if (color === 'red') {
     document.write('STOP');
-    else if color === ('yellow');
+} else if (color === 'yellow') {
     document.write('wait');
-    else if (color === ('green'));
+} else if (color === 'green') {
     document.write('GO');
-    else ('HHH'); }
-
+} else {
+    'HHH'
 }
+
+
 
 
