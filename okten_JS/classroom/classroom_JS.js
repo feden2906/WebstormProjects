@@ -88,9 +88,47 @@ alert('Oleg \n 37 \n bicycle');
     Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
   Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
     Вывести в документ содержимое переменной concatenation спомощью document.write
- */
+
 let str1 = 'Кто'
 let str2 = 'ты'
 let str3 = 'такой?'
-let concatenation = (str1 + str2 + str3);
-document.write(concatenation);
+// let concatenation = (str1 + " " + str2 + " " +  str3);
+//document.write(concatenation);
+// ...........ВАРІАНТ № 2 ..............
+// let concatenation = (`${str1} ${str2}  ${str3}`);
+// document.write(concatenation);
+*/
+
+
+/*10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+
+let str = "20";
+let a = 5;
+document.write(str + a + "<br/>");
+document.write(str - a + "<br/>");
+document.write(str * "2" + "<br/>");
+document.write(str / 2 + "<br/>");
+
+Почему-то стринга ведет себя как число, кроме первого случая.
+*/
+
+
+/*13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух
+чисел, а вывод результата при помощи метода alert
+let a = +prompt('введи перше число');
+let b = +prompt('введи друге число');
+alert(a + b);
+*/
+
+/*
+14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию
+ и возраст, а вам не обходимо вывести строку такого вида
+Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+
+let firstName = prompt("ім'я:");
+let surName = prompt('призвіще:');
+let age = +prompt('вік:');
+document.write(`<p> Доброго вечера ${firstName} ${surName}. Мои поздравления что Вам ${age} </p>`)
+*/
+
+
