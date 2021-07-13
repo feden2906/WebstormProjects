@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.radius_5 {
+    border-radius: 5px;
+}
+
+.font_yellow {
+    font-size: 8px;
+    color: yellow;
+    line-height: 0.7em;
+}
+
+.font_black {
+    font-size: 10px;
+    line-height: 0.7em;
+    color: #000;
+}
+
+.squares {
+    width: 10%;
+    height: 90%;
+}
+
+.rectangle {
+    width: 40%;
+    height: 40%;
+}
+
+.backround_for_wrap {
+    background: #affcd2;
+}
+
+.backround_for_elemetns {
+    background: #364ff6;
+}
+
+
+.wrap_out {
+    background: #909090;
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.header {
+    height: 4%;
+    position: relative;
+}
+
+.logo {
+    width: 10%;
+    height: 60%;
+    background: red;
+    position: absolute;
+    left: 7%;
+    bottom: 25%;
+}
+
+
+.block_black {
+    height: 18%;
+    background: #0d0d39;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.text_on_black {
+    width: 20%;
+    height: 15%;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.ghost {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.ghost_child {
+    margin-left: 10px;
+    bottom: 50%;
+    z-index: 1;
+    position: relative;
+
+}
+
+.wrap_for_h2 {
+    height: 10%;
+    position: relative;
+    bottom: 16%;
+    display: flex;
+
+}
+
+.h2_head {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.wrap_for_four_1 {
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 16%;
+    margin-top: 40px;
+}
+
+.for_row_4 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.word {
+    position: relative;
+    bottom: -10%;
+}
+
+.h2_second {
+    text-align: center;
+    margin-top: -110px;
+}
+
+.wrap_for_4rectangles {
+    height: 30%;
+    margin-top: 30px;
+
+}
+.wrap_for_2rectangle{
+    height: 50%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.wrap_for_2rectangle div{
+    height: 80%;
+    line-height: 0.7em;
+}
+.text_for_rectangle p{
+    top: 130%;
+}
+

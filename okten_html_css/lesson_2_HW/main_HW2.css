@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    background: #cbf8f3;
+    border: 3px solid #00138b;
+    height: 800px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 25%;
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrap_2{
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.article{
+    width: 80%;
+}
+.aside{
+    width: 20%;
+}
+.article,.aside{
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+    height: 100%;
+}
+
+.menu li {
+    display:inline-block;
+}
+
+.menu{
+    margin-top:30px;
+    width: 90%;
+    text-align: center;
+
+}
+.menu li a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav, .footer{
+    height: 10%;
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+}
+.header_2{
+    height: 15%;
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+}
+.wrap_2_2{
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.img_2{
+    margin-top: 10px;
+}
+.menu_3{
+    width: 20%;
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+    height: 100%;
+}
+.wrap_for_post{
+    width: 80%;
+    height: 100%;
+}
+.post_1, .post_2{
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 3px;
+    height:50%
+}
+
+.post_3{
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 3px;
+    height: 50%;
+}
+
+.footer_3{
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    height: 20%;
+    margin: 10px 5px 10px 5px;
+}
+
+.wrap_4{
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.img_4{
+    width:32%;
+    height: 100%;
+}
+.footer_4{
+    height: 50%;
+    border: 3px solid #00138b;
+    border-radius: 10px;
+    background: yellow;
+    margin: 5px;
+    margin-top:10px;
+}
