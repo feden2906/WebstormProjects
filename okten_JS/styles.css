@@ -1,3 +1,9 @@
 body{
     background: #cbf8f3;
 }
+p{
+    font-size: 80px;
+    color: #364ff6;
+    background: yellow;
+    border: 5px solid red;
+}

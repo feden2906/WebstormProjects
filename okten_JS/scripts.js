@@ -40,4 +40,30 @@ document.write(variable_11);
 document.write(variable_12);
 document.write(variable_13);
 document.write(variable_14);
+/*change variables*/
+variable_2 = 'lorem';
+variable_3 = 'ipsum';
+/*....etc...*/
+/*...........concatination... ?)..........*/
+let fisrtName = 'Oleg';
+let lastName = 'Bilko';
+let midleName = 'Anatoliyovich';
+
+let person = (lastName + fisrtName + midleName);
+document.write(person);
+
+/*Приветствие с помощью PROMPT. Сними комент, чтобы заработало))*/
+
+/*
+let firstName = prompt("ім'я:");
+let middleName = prompt('по-батькові:');
+let age = +prompt('вік:');
+document.write(`<p> Вітаю ${firstName} ${middleName}. Тобі ${age} років </p>`)
+*/
+
+/* console.log type of variables*/
+let a = 100; let b = '100'; let c = true;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
 
