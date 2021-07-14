@@ -173,16 +173,17 @@ if (c > a && c > b && a > c)  document.write(`${a} ${b} ${c}`);
  */
 
 
-let color = prompt('color:');
-if (color === 'red') {
-    document.write('STOP');
-} else if (color === 'yellow') {
-    document.write('wait');
-} else if (color === 'green') {
-    document.write('GO');
-} else {
-    'HHH'
-}
+// let color = prompt('color:');
+// if (color === 'red') {
+//     document.write('STOP');
+// } else if (color === 'yellow') {
+//     document.write('wait');
+// } else if (color === 'green') {
+//     document.write('GO');
+// } else {
+//    document.write('РОБИ ЩО ХОЧЕШ! :-)');
+// }
+
 
 
 
