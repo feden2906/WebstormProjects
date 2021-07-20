@@ -1,9 +1,18 @@
 body{
     background: #fffcda;
 }
+
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+}
+.wrap > div{
+    background: #5aff00;
+    width: 19%;
+}
 p{
-    font-size: 80px;
-    color: #364ff6;
-    background: yellow;
-    border: 5px solid red;
+    width: 30%;
 }

@@ -1,4 +1,3 @@
-
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HW_1.1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 /*Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -25,6 +24,7 @@ document.write(`</ul>`)*/
     Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон.
 Шаблон застосувати до кожного об'єкта в масиві*/
 
+/*
 let simpsons = [
     {
         name: 'Bart',
@@ -62,23 +62,66 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
+*/
 
-//..............................<!--template 2.1......................-->
-         /*<div>
-             NAME- SURNAME- AGE- INFO- <img src="PHOTO" alt="">
-        </div>*/
+//..............................<!--template 2.1..  my display resolution: 1920x1080p...........................-->
+/*<div>
+    NAME- SURNAME- AGE- INFO- <img src="PHOTO" alt="">
+</div>*/
 
-
-document.write(`<div>`)
+/*document.write(`<div class="wrap">`);
 
 for (const simpson of simpsons) {
-    document.write(
-        `<div>
-
-       <p> ${simpson.name}, ${simpson.surname}, ${simpson.age}, ${simpson.info} </p>
-        <img src="${simpson.photo" alt="foto">
-        
-    </div>`);
+    document.write
+    (`
+    <div>   NAME - ${simpson.name} <br>
+            SURNAME- ${simpson.surname} <br>
+            AGE- ${simpson.age} <br>
+            INFO- ${simpson.info} <br>
+            <img src="${simpson.photo}" alt="photo"> 
+      </div>
+`)
 }
-document.write(`</div>`);
-check home git
+document.write(`</div>`);*/
+
+<!--..................................template 2.2........................................................-->
+
+/*<div>
+    <h2>NAME SURNAME. age is - AGE</h2>
+    <p>INFO</p>
+    <img src="PHOTO" alt="">
+</div>*/
+//<!--
+//інші об'єкти з масиву
+//...
+//..............................................................................................................
+/*document.write(`<div class="wrap">`);
+for (const simpson of simpsons) {
+    document.write
+    (`
+      <h2>NAME - ${simpson.name} SURNAME- ${simpson.surname} age is ${simpson.age} </h2> 
+             <p>INFO- ${simpson.info}</p>
+            <img src="${simpson.photo}" alt="photo"> 
+     `)
+}
+document.write(`</div>`);*/
+
+// ДЛЯ БОЛЕЕ ВМЕНЯЕМОГО ОТОБРАЖЕНИЯ НУЖНО ВЫКЛЮЧИТЬ СВОЙСТВО display В ФАЙЛЕ styles.css (оно для template 2.1)
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<HW 1_3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+/*
+			Використовуючи данні з масиву, за допомоги document.write та циклу
+            побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
+            Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+ */
+//......................................template3.1...................................................................
+
+<div>
+    <div class="product-card">
+        <h3 class="product-title">TITLE. Price - PRICE</h3>
+        <img src="" alt="" class="product-image">
+        </div>
+                інші об'єкти з масиву
+                ...
+</div>
