@@ -36,7 +36,7 @@ p {
 }
 .product-image:hover{
     -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
+    -moz-transform: scale(2.5);
     -o-transform: scale(1.1);
     transition: 1s;
     cursor: pointer;

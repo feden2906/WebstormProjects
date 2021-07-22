@@ -126,6 +126,7 @@ document.write(`</div>`);*/
                 інші об'єкти з масиву
                 ...
 </div>*/
+/*
 let products = [
     {
         title: 'milk',
@@ -158,4 +159,6 @@ for (const product of products) {
     </div>
 `)
 }
-document.write(`</div>`);
+document.write(`</div>`);*/
+
+
