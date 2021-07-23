@@ -5,9 +5,7 @@
   <title>Title</title>
 </head>
 <body>
-<style>
 
-</style>
 <!--*За допомогою циклу вивести всю інформацію про пости використовуючи шаблон Template 1.1.
 * ЗА допомоги стилів побудувати структуру "сітки" по 5 об'єктів в лінію-->
 
@@ -24,6 +22,30 @@
   &ndash;&gt;
 </div>-->
 <!--************************************************************************************************************-->
+<style>
+  .wrap{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  .post-card{
+    background: #f52424;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+  .post-card > h3 {
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+    white -1px 1px 0, white 1px -1px 0;
+  }
+</style>
+
 <script>
   let users = [
     {
@@ -637,7 +659,6 @@
     <p>${user.body}</p>
 
     </div>
-
 
     `)
   }
