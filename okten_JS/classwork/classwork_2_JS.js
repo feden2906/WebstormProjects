@@ -104,7 +104,7 @@ for (let i = 2; i <= 100; i = i+2) {
     document.write(i);
 }*/
 
-//- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+//- Створити цикл for на 100 ітерацій. Вивести тільки не парні кроки. через console.log + document.write
 /*
 for (let i = 1; i <= 100; i = i+2) {
     console.log(i);
