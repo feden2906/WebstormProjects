@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="main_header">This is page for task2</h1>
+<ul>
+    <li class="linkList listElement1"><a href="#">link1</a></li>
+    <li class="linkList listElement2"><a href="#">link2</a></li>
+    <li class="linkList listElement3"><a href="#">link3</a></li>
+</ul>
+<h3 class="sub-header">content 1 segment</h3>
+<div class="content_1">
+    <p class="text_segment text1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem cumque distinctio,
+        dolorem
+        eligendi eum eveniet facere inventore ipsa minus pariatur repellendus sequi sit veniam voluptatum.
+        Fugit,
+        soluta?</p>
+
+</div>
+<h3 class="sub-header">content 2 segment</h3>
+<div class="content_2">
+    <p class="text_segment text2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae, exercitationem modi mollitia
+        omnis
+        possimus quam rerum sequi temporibus tenetur! Accusantium ad commodi eveniet excepturi laboriosam quis
+        quisquam sint temporibus.</p>
+</div>
+
+<script>
+// a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
+
+let changeColor = document.getElementById('main_header');
+    changeColor.innerHTML = `Frontend`;
+    changeColor.style.color = 'red';
+
+
+
+// b) робить шириниу елементу ul 400px
+ let withUl = document.getElementsByTagName('ul')[0];
+ withUl.style = 'width: 400px';
+
+ // c) робить шириниу всіх елементів з класом linkList шириною 50%
+
+let width_50 = document.getElementsByClassName('linkList');
+for (const link of width_50) {
+    link.style = 'width: 50%';
+}
+
+//d) отримує текст який зберігається в елементі з класом listElement2
+let text = document.getElementsByClassName('listElement2')[0];
+console.log(text.innerText);
+
+//e) отримує всі елементи li та змінює ім колір фону на сірий
+
+let colorLi = document.getElementsByTagName('li');
+for (const li of colorLi) {
+    li.style = 'background: grey';
+}
+//f) отримує всі елементи 'a' та додає їм клас anchor
+let tags_a = document.getElementsByTagName('a');
+for (const a of tags_a) {
+    a.classList.add('anchor');
+}
+
+//отримує всі елементи 'a' та у випадку,
+// якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+
+let aLinks = document.getElementsByTagName('a');
+for (const aLink of aLinks) {
+
+   if (aLink.textContent === 'link3')
+   {
+       aLink.style = 'font-size: 40px'
+   }
+}
+//h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+let aXXX = document.getElementsByTagName('a');
+for (const aClass of aXXX) {
+    aClass.classList.add(aClass.textContent);
+}
+
+
+
+</script>
+</body>
+</html>
