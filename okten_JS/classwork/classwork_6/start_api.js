@@ -20,7 +20,7 @@ fetch ('https://jsonplaceholder.typicode.com/posts')
 
         let btn = document.createElement('button');
         btn.innerText = `all comments`;
-        userPosts.append(btn);
+        title.append(btn);
 
         btn.addEventListener("click",   function (){
 
