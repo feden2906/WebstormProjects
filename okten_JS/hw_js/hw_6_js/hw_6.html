@@ -15,9 +15,10 @@ https://jsonplaceholder.typicode.com/posts-->
 
 
 <div class="users_posts"></div>
+<div class='userComments'></div>
 
 <script>
-    fetch('https://jsonplaceholder.typicode.com/posts')
+   /* fetch('https://jsonplaceholder.typicode.com/posts')
         .then(value => value.json())
         .then(posts => {
 
@@ -33,7 +34,28 @@ https://jsonplaceholder.typicode.com/posts-->
 
                 }
             }
-        )
+        )*/
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  6.2   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   /* 2.
+    Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
+    https://jsonplaceholder.typicode.com/comments*/
+    fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(value => value.json())
+    .then(comments => {
+        let commentsBox = document.getElementsByClassName('userComments')[0];
+        for (const comment of comments) {
+            let userNane = document.createElement('h2');
+            userNane.innerText = `${comment.id} - ${comment.name} ${comment.email}`
+            commentsBox.append(userNane);
+
+            let userComment = document.createElement('p');
+            userComment.innerText = `${comment.body}`;
+            commentsBox.append(userComment);
+
+        };
+
+    })
+
 
 
 </script>
