@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Post Details</title>
+
+    <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
 
 <script>
+
     let postUrl = new URL(location);
     let getPost = postUrl.searchParams.get('post');
     let post = JSON.parse(getPost);
@@ -15,7 +19,15 @@
     let postInfo = document.createElement('div');
     postInfo.classList.add('post-info');
 
-    postInfo.innerText = JSON.stringify(post, null, 3);
+    //postInfo.innerText = JSON.stringify(post, null, 3);
+    postInfo.innerText = `Post Info
+    user ID: ${post.userId};
+    post ID: ${post.id};
+    title: ${post.title};
+    body: ${post.body};
+
+    `;
+
     document.body.append(postInfo);
 
     fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
@@ -24,12 +36,20 @@
 
             let allComments = document.createElement('div');
             allComments.classList.add('all-comments');
+            let headerComments = document.createElement('h2');
+            headerComments.innerHTML = 'All  comments for post';
 
             for (const comment of comments) {
+
                 let commentItem = document.createElement('p');
+                commentItem.classList.add('each-comment');
+
                 commentItem.innerText = `${comment.body}`;
                 allComments.append(commentItem);
+                document.body.append(headerComments);
                 document.body.append(allComments);
+
+
 
             }
         });

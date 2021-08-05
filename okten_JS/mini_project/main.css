@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("okten.jpg") no-repeat fixed;
+    background-position: center;
+}
+
+h1, h2 {
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+
+.btn {
+    background: #8BD4D6;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn:hover {
+    background: #5aff00;
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+#allUsers {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
+
+}
+
+.user-container {
+    background: #fffebd;
+    text-align: center;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.us-details {
+    margin: 0 auto;
+    font-size: 25px;
+    width: 90%;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.btn-post {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.user-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw;
+    margin-top: 50px;
+
+}
+
+.post-box {
+    background: #dad0d0;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+}
+
+.post-info {
+    width: 80%;
+    margin: 30px auto;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+.all-comments {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.each-comment {
+    background: gainsboro;
+    border: 2px solid red;
+    border-radius: 10px;
+}
