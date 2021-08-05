@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Details</title>
+</head>
+
+<body>
+
+<script>
+    let postUrl = new URL(location);
+    let getPost = postUrl.searchParams.get('post');
+    let post = JSON.parse(getPost);
+
+    let postInfo = document.createElement('div');
+    postInfo.classList.add('post-info');
+
+    postInfo.innerText = JSON.stringify(post, null, 3);
+    document.body.append(postInfo);
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+        .then (value => value.json())
+        .then(comments => {
+
+            let allComments = document.createElement('div');
+            allComments.classList.add('all-comments');
+
+            for (const comment of comments) {
+                let commentItem = document.createElement('p');
+                commentItem.innerText = `${comment.body}`;
+                allComments.append(commentItem);
+                document.body.append(allComments);
+
+            }
+        });
+
+
+
+</script>
+
+
+</body>
+</html>

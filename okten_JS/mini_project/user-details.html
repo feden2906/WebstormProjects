@@ -10,12 +10,45 @@
 <body>
 
 <script>
-    const url = new URL(location);
-    console.log(url);
 
-    const getUser = url.searchParams.get('user');
-    console.log(getUser);
+    let url = new URL(location);
+    let getUser = url.searchParams.get('user');
+    let user = JSON.parse(getUser);
 
+    let userInfo = document.createElement('div');
+    userInfo.classList.add('us-details');
+
+    userInfo.innerText= JSON.stringify(user, null,3);
+    document.body.append(userInfo);
+
+    let btnPost = document.createElement('button');
+    btnPost.innerText = 'post of current user';
+    document.body.append(btnPost);
+
+    btnPost.addEventListener("click", function (){
+        fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
+            .then (value => value.json())
+            .then(posts => {
+                let userBox = document.createElement('div');
+                userBox.classList.add('user-box');
+                for (const post of posts) {
+                    let userPosts = document.createElement('p');
+                    userPosts.innerText = `${post.title}`;
+                    userBox.append(userPosts);
+                    document.body.append(userBox);
+
+                    let btnPostDet = document.createElement('button');
+                    btnPostDet.innerText = 'Post Details';
+                    userBox.append(btnPostDet);
+                    userBox.onclick = function (){
+                        location.href = `post-details.html?post=${JSON.stringify(post)}`;
+                    };
+
+                }
+
+            });
+
+    });
 
 </script>
 

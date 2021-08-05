@@ -27,11 +27,13 @@ fetch ('https://jsonplaceholder.typicode.com/posts')
             fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
                 .then (item => item.json())
                 .then(comments => {
+
                     const el = [...document.getElementsByClassName('remove')]
                     el.map((e) => e.innerText = '')
-
                     let commentsWrapper = document.createElement('div')
                     commentsWrapper.classList.add('remove')
+
+
                     for (const comment of comments) {
                         let userComments = document.createElement('div')
 
