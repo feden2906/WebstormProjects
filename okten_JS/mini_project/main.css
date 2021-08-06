@@ -5,12 +5,11 @@
 }
 
 body {
-    background: url("okten.jpg") no-repeat fixed;
-    background-position: center;
+    background: url("okten.jpg") no-repeat fixed center;
 }
 
 h1, h2 {
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", serif;
     text-align: center;
 }
 
@@ -31,13 +30,11 @@ h1, h2 {
 
 #allUsers {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3vw;
-
 }
 
 .user-container {
@@ -50,12 +47,11 @@ h1, h2 {
 }
 
 .us-details {
-    margin: 0 auto;
     font-size: 25px;
     width: 90%;
     border: 2px solid darkblue;
     border-radius: 10px;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
 
 .btn-post {

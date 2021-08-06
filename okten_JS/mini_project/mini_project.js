@@ -22,9 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             userContainer.append(btn);
             usersDiv.append(userContainer);
 
-            btn.onclick = function (){
-                location.href = `user-details.html?user=${JSON.stringify(user)}`; //======>>>
-            };
+            btn.onclick = () => location.href = `user-details.html?user=${JSON.stringify(user)}`; //======>>>
 
         }
 
